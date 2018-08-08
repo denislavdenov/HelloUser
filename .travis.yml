@@ -1,3 +1,11 @@
 language: python
 script:
 - bash -x test.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: tHWACFEmhylPNUXRE0nhhH0aDV+gQlmjJ/uWm1MApCSx0zD/kY09KHEWv/YfGup0XKMZuh+BGgi01ueFrCkKJL2ErgOOgSNhOMX+obQuMSem1LgN2IgX9MKxf+CPrGM+UGJ/5hcNTfjiPHmeCfxfOr153ZbrU5iispXgJ2CNpSydnmRHcubGSakw3cSu2a32MsxHdltEOjosH7J3QTn3jUwKCjMZDmXa6z1ZRiUgWhm+6qY7lY3IwicAhQnLBPTflvR9SS0WQ7HCjLa2ip7hI461kYmLMlHra54yXaPBQDj0gv4bdIoHf6VuAnU686GGI/28M60uzT6Ubxv9uMhWUEzwzwyVK2QjEZiKtLuRm1libpUooRqoMNXqRREI1oFRovu4RNS0NfzPw/kH481IshR0HZSBF09rRL70WD8KChlrrvt1draKkNoNq6axeyqRnH/xRmO16QQst7yv2PaiLAf2Jq6FCtR3UgvxqXrRTBLfSay/+tUlPxmgW2C7Zp92JCUvXQb0+In+HEACbDl1A/WCYJUI4opuezU+6PKo59D1Vjs+MVy7VSuK516HEoa0HKUG8RzsKWGKhhmpWM+xGTJLe3O9xfyS719ByELKoy6obeFzE5olOPRFR2mXngc7riFNXcT1k0offZnPqNi25WVMlON4xMDeSVdAWxZd3zs=
+  file: hello.sh
+  on:
+    repo: denislavdenov/HelloUser
+    branch: f-updatetravis
