@@ -8,4 +8,4 @@ deploy:
   file: hello.sh
   on:
     repo: denislavdenov/HelloUser
-    branch: f-updatetravis
+    tags: true
